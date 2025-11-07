@@ -19,6 +19,9 @@ export const HomePage: React.FC = () => {
         <SkillSummary skill="Front-End Web Development" tools={frontendTools} />
         <SkillSummary skill="Game Development" tools={gamedevTools} />
         <SkillSummary skill="Game Engine" tools={gameEngineTools} />
+        <p>
+          Contact: <a className={`${styles.primaryText1} ${styles.email} ${styles.highlight}`} href="mailto:rio.swe.workmail@gmail.com">rio.swe.workmail@gmail.com</a>
+        </p>
         <div className={styles.dottedDivider}></div>
         <TitleCard title="Work History" subtitle="Journey throughout the industry." />
       </Card>

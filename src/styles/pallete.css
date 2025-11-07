@@ -2,6 +2,8 @@
   --primary-1: hsl(271 100% 81.8%);
   --primary-2: hsl(271 100% 68.8%);
 
+  --highlight-1: hsl(271 100% 90.8%);
+
   --text: hsl(223 100% 98.6%);
   --text-muted-1: hsl(223 4.3% 90.5%);
   --text-muted-2: hsl(223 4.3% 70.5%);
@@ -13,4 +15,5 @@
   --background-1: hsl(228 17.2% 5.7%);
   --background-2: hsl(228 17.2% 8.7%);
   --background-3: hsl(228 17.2% 11.7%);
+  --background-4: hsl(228 17.2% 31.7%);
 }

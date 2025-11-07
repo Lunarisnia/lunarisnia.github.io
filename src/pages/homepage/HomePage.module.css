@@ -4,6 +4,17 @@
 	color: var(--primary-1);
 }
 
+.email {
+	text-decoration: none;
+	transition: padding 0.2s ease;
+}
+
+.highlight:hover {
+	background-color: var(--background-3);
+	padding: 0.5rem;
+	transition: padding 0.2s ease;
+}
+
 .dottedDivider {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
