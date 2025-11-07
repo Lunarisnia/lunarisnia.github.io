@@ -1,0 +1,11 @@
+@import "../../styles/pallete.css";
+
+.header1 {
+	color: var(--text);
+	margin-bottom: -1rem;
+}
+
+.tools {
+	color: var(--text-muted-1);
+	margin-left: 1.2rem;
+}

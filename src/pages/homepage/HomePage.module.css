@@ -1,0 +1,13 @@
+@import "../../styles/pallete.css";
+
+.primaryText1 {
+	color: var(--primary-1);
+}
+
+.dottedDivider {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	border-top-width: 0.15rem;
+	border-top-color: var(--border-1);
+	border-top-style: dashed;
+}
