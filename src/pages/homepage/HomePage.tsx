@@ -1,5 +1,5 @@
 import styles from "./HomePage.module.css";
-import { Card, SkillSummary, TitleCard } from "../../components";
+import { Card, SkillSummary, SocialMedia, TitleCard } from "../../components";
 
 export const HomePage: React.FC = () => {
   const backendTools = ["Go", "NodeJS", "Python", "PostgreSQL", "RabbitMQ", "Terraform", "AWS", "NGINX", "Docker"];
@@ -22,6 +22,7 @@ export const HomePage: React.FC = () => {
         <p>
           Contact: <a className={`${styles.primaryText1} ${styles.email} ${styles.highlight}`} href="mailto:rio.swe.workmail@gmail.com">rio.swe.workmail@gmail.com</a>
         </p>
+        <SocialMedia />
         <div className={styles.dottedDivider}></div>
         <TitleCard title="Work History" subtitle="Journey throughout the industry." />
       </Card>

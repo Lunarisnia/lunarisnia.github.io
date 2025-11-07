@@ -17,3 +17,9 @@
   --background-3: hsl(228 17.2% 11.7%);
   --background-4: hsl(228 17.2% 31.7%);
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
