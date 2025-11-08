@@ -22,3 +22,8 @@
 	border-top-color: var(--border-1);
 	border-top-style: dashed;
 }
+
+.smallPadding {
+	margin-top: -0.2rem;
+	margin-bottom: -1.0rem;
+}

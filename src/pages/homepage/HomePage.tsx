@@ -1,5 +1,5 @@
 import styles from "./HomePage.module.css";
-import { Card, SkillSummary, SocialMedia, TitleCard } from "../../components";
+import { Card, SkillSummary, SocialMedia, TitleCard, WorkHistory } from "../../components";
 
 export const HomePage: React.FC = () => {
   const backendTools = ["Go", "NodeJS", "Python", "PostgreSQL", "RabbitMQ", "Terraform", "AWS", "NGINX", "Docker"];
@@ -24,7 +24,52 @@ export const HomePage: React.FC = () => {
         </p>
         <SocialMedia />
         <div className={styles.dottedDivider}></div>
-        <TitleCard title="Work History" subtitle="Journey throughout the industry." />
+        <TitleCard title="Career Timeline" subtitle="Journey throughout the industry." />
+        <WorkHistory>
+          <WorkHistory.Header>
+            Full Stack Web Developer at <a href="https://www.goldenenergymines.com/" target="_blank">Sinarmas Mining</a>
+          </WorkHistory.Header>
+          <WorkHistory.Duration>
+            May 2020 - June 2023
+          </WorkHistory.Duration>
+          <WorkHistory.Detail>
+            <p>Tech Used: VueJS, ExpressJS, MySQL, MongoDB, PostgreSQL, Python</p>
+          </WorkHistory.Detail>
+        </WorkHistory>
+        <WorkHistory>
+          <WorkHistory.Header>
+            Software Engineer at <a href="https://www.cosmart.id/" target="_blank">Cosmart</a>
+          </WorkHistory.Header>
+          <WorkHistory.Duration>
+            June 2023 - July 2024
+          </WorkHistory.Duration>
+          <WorkHistory.Detail>
+            <p>Tech Used: Go, PostgreSQL, RabbitMQ, AWS, Python, gRPC, Terraform, Docker</p>
+          </WorkHistory.Detail>
+        </WorkHistory>
+        <WorkHistory>
+          <WorkHistory.Header>
+            Software Engineer II at <a href="https://www.flip.id/" target="_blank">Flip</a>
+          </WorkHistory.Header>
+          <WorkHistory.Duration>
+            Sept 2024 - Jan 2025
+          </WorkHistory.Duration>
+          <WorkHistory.Detail>
+            <p>Tech Used: Go, PostgreSQL, Google Cloud</p>
+          </WorkHistory.Detail>
+        </WorkHistory>
+        <WorkHistory>
+          <WorkHistory.Header>
+            Open For Hiring
+          </WorkHistory.Header>
+          <WorkHistory.Duration>
+            Present - Contact Me!
+          </WorkHistory.Duration>
+          <WorkHistory.Detail>
+            <p className={styles.smallPadding}>Web Dev: Full Stack, Front End, Back End</p>
+            <p>Game Dev: Game Programmer, Junior Graphics Programmer</p>
+          </WorkHistory.Detail>
+        </WorkHistory>
       </Card>
     </>
   );
