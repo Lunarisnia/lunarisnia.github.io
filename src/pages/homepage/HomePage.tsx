@@ -104,6 +104,8 @@ export const HomePage: React.FC = () => {
             <ProjectCard.Detail title="Rendering Engine" description="A playground for testing & learning graphics technique." />
           </ProjectCard>
         </div>
+        <div className={styles.dottedDivider}></div>
+        <TitleCard title="Articles" subtitle="Things I wrote, I hope you found this helpful." />
       </Card>
     </>
   );
