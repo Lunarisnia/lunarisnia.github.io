@@ -9,19 +9,19 @@ const Header = ({ children }: SubProp) => {
 	return <h1 className={styles.header}>{children}</h1>
 }
 const Detail = ({ children }: SubProp) => {
-	return <div>{children}</div>
+	return <div className={styles.detail}>{children}</div>
 }
 const Duration = ({ children }: SubProp) => {
 	return <p className={styles.duration}>{children}</p>
 }
 
-type WorkHistoryComponent = FC<{ children: ReactNode }> & {
+type WorkHistoryComponent = FC<{ children: ReactNode, href?: string }> & {
 	Header: typeof Header;
 	Detail: typeof Detail;
 	Duration: typeof Duration;
 };
 
-const WorkHistory: WorkHistoryComponent = ({ children }) => {
+const WorkHistory: WorkHistoryComponent = ({ children, href }) => {
 	const [header, setHeader] = useState(<div></div>);
 	const [duration, setDuration] = useState(<div></div>);
 	const [detail, setDetail] = useState(<div></div>);
@@ -46,11 +46,13 @@ const WorkHistory: WorkHistoryComponent = ({ children }) => {
 	}, [children])
 
 	return (
-		<div className={styles.body}>
-			{header}
-			{duration}
-			{detail}
-		</div>
+		<a href={href} target="_blank">
+			<div className={styles.body}>
+				{header}
+				{duration}
+				{detail}
+			</div>
+		</a>
 	);
 };
 

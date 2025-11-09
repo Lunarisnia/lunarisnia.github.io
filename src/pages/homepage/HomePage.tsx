@@ -116,6 +116,17 @@ export const HomePage: React.FC = () => {
         </div>
         <div className={styles.dottedDivider}></div>
         <TitleCard id="articles" title="Articles" subtitle="Things I wrote, I hope you found this helpful." />
+        <WorkHistory href="https://medium.com/@lounarisnia/the-unseen-brilliant-of-go-build-tags-944d1dc922fa">
+          <WorkHistory.Header>
+            The Unseen Brilliant of Go: Build Tags
+          </WorkHistory.Header>
+          <WorkHistory.Duration>
+            https://medium.com/@lounarisnia/the-unseen-brilliant-of-go-build-tags-944d1dc922fa
+          </WorkHistory.Duration>
+          <WorkHistory.Detail>
+            <p>Learn about one of the niche feature Go has to offer.</p>
+          </WorkHistory.Detail>
+        </WorkHistory>
       </Card>
     </>
   );

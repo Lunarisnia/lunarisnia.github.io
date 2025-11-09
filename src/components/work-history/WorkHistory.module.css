@@ -45,6 +45,10 @@
 	transition: background-color 0.2s ease;
 }
 
+.detail {
+	color: var(--text-muted-1);
+}
+
 a {
 	color: var(--primary-1);
 }
