@@ -25,3 +25,23 @@ th {
 	border-left-style: dashed;
 	border-left-color: var(--border-1);
 }
+
+@media (max-width: 768px) {
+	th {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin-left: -2rem;
+		margin-right: -2rem;
+		font-size: 0.45rem;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+	th {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		margin-left: -2rem;
+		margin-right: -2rem;
+		font-size: 1.25rem;
+	}
+}

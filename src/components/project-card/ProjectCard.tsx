@@ -21,11 +21,12 @@ const Image = ({ src, width, height, alt, title, href }: ImageSubProp) => {
 type DetailSubProp = {
 	title: string;
 	description: string;
+	sm?: boolean;
 }
-const Detail = ({ title, description }: DetailSubProp) => {
+const Detail = ({ title, description, sm }: DetailSubProp) => {
 	return (
 		<div className={styles.titleCard}>
-			<h1 className={styles.titleCardHeader}>{title}</h1>
+			<h1 className={`${styles.titleCardHeader} ${sm ? styles.sm : ""}`} >{title}</h1>
 			<p>{description}</p>
 		</div>);
 }

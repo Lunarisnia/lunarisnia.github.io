@@ -103,7 +103,7 @@ export const HomePage: React.FC = () => {
           </ProjectCard>
           <ProjectCard>
             <ProjectCard.Image src={bytesize} href="https://www.tiktok.com/@lunarisnia" />
-            <ProjectCard.Detail title="Bytesize Programming" description="A web video series teaching people programming." />
+            <ProjectCard.Detail title="Bytesize Programming" description="A web video series teaching people programming." sm="sm" />
           </ProjectCard>
           <ProjectCard>
             <ProjectCard.Image src={bejat} href="https://github.com/Lunarisnia/bejat" />
