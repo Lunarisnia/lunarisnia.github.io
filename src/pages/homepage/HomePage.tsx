@@ -29,7 +29,7 @@ export const HomePage: React.FC = () => {
         <TitleCard id="profile" title="Rio Arswendo" subtitle="Software Engineer >> Full Stack Web Dev >> Game Dev" />
         <p>
           My name is Rio, I am a Software Engineer of <a className={styles.primaryText1}>4+Years of Experience </a>
-          with varieties of interest including but not limited to; Full Stack Web Development, Game Development, Game Engine, Graphics Engineering.
+          with varieties of interest including but not limited to; Full Stack Web Development, Game Development, Game Engine, Computer Graphics.
         </p>
         <SkillSummary skill="Back-End Web Development" tools={backendTools} />
         <SkillSummary skill="Front-End Web Development" tools={frontendTools} />
