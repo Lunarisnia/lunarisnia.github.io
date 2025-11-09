@@ -1,0 +1,27 @@
+@import "../../styles/pallete.css";
+
+.body {
+	display: block;
+	position: absolute;
+	z-index: 99;
+	width: 100%;
+	justify-items: center;
+	padding-top: 0.3rem;
+	padding-bottom: 0.5rem;
+}
+
+table {
+	border-style: none;
+}
+
+th {
+	padding-left: 4rem;
+	padding-right: 4rem;
+	border-top-style: none;
+	border-bottom-style: none;
+
+	border-right-style: dashed;
+	border-right-color: var(--border-1);
+	border-left-style: dashed;
+	border-left-color: var(--border-1);
+}

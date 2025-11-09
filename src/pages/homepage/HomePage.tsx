@@ -1,5 +1,5 @@
 import styles from "./HomePage.module.css";
-import { Card, ProjectCard, SkillSummary, SocialMedia, TitleCard, WorkHistory } from "../../components";
+import { Card, Navbar, ProjectCard, SkillSummary, SocialMedia, TitleCard, WorkHistory } from "../../components";
 import mazeDrawer from "../../assets/maze-drawer.png";
 import shanon from "../../assets/shanon.png";
 import agni from "../../assets/agni.jpg";
@@ -15,8 +15,18 @@ export const HomePage: React.FC = () => {
 
   return (
     <>
+      <Navbar>
+        <table border={1}>
+          <tr className={styles.navList}>
+            <th><a href="#profile">Profile</a></th>
+            <th><a href="#career">Career Timeline</a></th>
+            <th><a href="#projects">Projects</a></th>
+            <th><a href="#articles">Articles</a></th>
+          </tr>
+        </table>
+      </Navbar >
       <Card>
-        <TitleCard title="Rio Arswendo" subtitle="Software Engineer >> Full Stack Web Dev >> Game Engine" />
+        <TitleCard id="profile" title="Rio Arswendo" subtitle="Software Engineer >> Full Stack Web Dev >> Game Dev" />
         <p>
           My name is Rio, I am a Software Engineer of <a className={styles.primaryText1}>4+Years of Experience </a>
           with varieties of interest including but not limited to; Full Stack Web Development, Game Development, Game Engine, Graphics Engineering.
@@ -30,7 +40,7 @@ export const HomePage: React.FC = () => {
         </p>
         <SocialMedia />
         <div className={styles.dottedDivider}></div>
-        <TitleCard title="Career Timeline" subtitle="Journey throughout the industry." />
+        <TitleCard id="career" title="Career Timeline" subtitle="Journey throughout the industry." />
         <WorkHistory>
           <WorkHistory.Header>
             Full Stack Web Developer at <a href="https://www.goldenenergymines.com/" target="_blank">Sinarmas Mining</a>
@@ -77,7 +87,7 @@ export const HomePage: React.FC = () => {
           </WorkHistory.Detail>
         </WorkHistory>
         <div className={styles.dottedDivider}></div>
-        <TitleCard title="Projects" subtitle="Things I have had my hands on." />
+        <TitleCard id="projects" title="Projects" subtitle="Things I have had my hands on." />
         <div className={styles.grid}>
           <ProjectCard>
             <ProjectCard.Image src={mazeDrawer} href="https://lunarisnia.github.io/maze-drawer/" />
@@ -105,7 +115,7 @@ export const HomePage: React.FC = () => {
           </ProjectCard>
         </div>
         <div className={styles.dottedDivider}></div>
-        <TitleCard title="Articles" subtitle="Things I wrote, I hope you found this helpful." />
+        <TitleCard id="articles" title="Articles" subtitle="Things I wrote, I hope you found this helpful." />
       </Card>
     </>
   );

@@ -1,4 +1,6 @@
 .cardBody {
 	text-align: left;
-	padding: 80px;
+	max-width: 80%;
+	margin: auto;
+	padding-top: 4.5rem;
 }
