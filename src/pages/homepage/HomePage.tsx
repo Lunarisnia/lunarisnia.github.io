@@ -1,5 +1,11 @@
 import styles from "./HomePage.module.css";
 import { Card, ProjectCard, SkillSummary, SocialMedia, TitleCard, WorkHistory } from "../../components";
+import mazeDrawer from "../../assets/maze-drawer.png";
+import shanon from "../../assets/shanon.png";
+import agni from "../../assets/agni.jpg";
+import bejat from "../../assets/bejat.png";
+import bytesize from "../../assets/bytesize.png";
+import rendering from "../../assets/rendering.png";
 
 export const HomePage: React.FC = () => {
   const backendTools = ["Go", "NodeJS", "Python", "PostgreSQL", "RabbitMQ", "Terraform", "AWS", "NGINX", "Docker"];
@@ -74,27 +80,27 @@ export const HomePage: React.FC = () => {
         <TitleCard title="Projects" subtitle="Things I have had my hands on." />
         <div className={styles.grid}>
           <ProjectCard>
-            <ProjectCard.Image src="https://placehold.co/1080x1080" />
+            <ProjectCard.Image src={mazeDrawer} href="https://lunarisnia.github.io/maze-drawer/" />
             <ProjectCard.Detail title="Maze Solver" description="A demo of the A* pathfinding algorithm." />
           </ProjectCard>
           <ProjectCard>
-            <ProjectCard.Image src="https://placehold.co/1080x1080" />
+            <ProjectCard.Image src={shanon} href="https://lunarisnia.itch.io/shanon-is-lost" />
             <ProjectCard.Detail title="Shanon Is Lost" description="Precision platformer video game made for a game jam." />
           </ProjectCard>
           <ProjectCard>
-            <ProjectCard.Image src="https://placehold.co/1080x1080" />
-            <ProjectCard.Detail title="Agni" description="I am the guy that did their infra that enable their remote work environment." />
+            <ProjectCard.Image src={agni} href="https://store.steampowered.com/app/3151360/Agni_Village_of_Calamity/" />
+            <ProjectCard.Detail title="Agni: VoC" description="I am the guy that did their infra that enable their remote work environment." />
           </ProjectCard>
           <ProjectCard>
-            <ProjectCard.Image src="https://placehold.co/1080x1080" />
+            <ProjectCard.Image src={bytesize} href="https://www.tiktok.com/@lunarisnia" />
             <ProjectCard.Detail title="Bytesize Programming" description="A web video series teaching people programming." />
           </ProjectCard>
           <ProjectCard>
-            <ProjectCard.Image src="https://placehold.co/1080x1080" />
+            <ProjectCard.Image src={bejat} href="https://github.com/Lunarisnia/bejat" />
             <ProjectCard.Detail title="Bejat Language" description="An esoteric programming language based on python." />
           </ProjectCard>
           <ProjectCard>
-            <ProjectCard.Image src="https://placehold.co/1080x1080" />
+            <ProjectCard.Image src={rendering} href="https://www.youtube.com/watch?v=Mqug9-ZTXPY" />
             <ProjectCard.Detail title="Rendering Engine" description="A playground for testing & learning graphics technique." />
           </ProjectCard>
         </div>
