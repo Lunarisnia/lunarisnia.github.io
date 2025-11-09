@@ -1,3 +1,4 @@
+export { ProjectCard } from "./project-card/ProjectCard";
 export { WorkHistory } from "./work-history/WorkHistory";
 export { SocialMedia } from "./social-media/SocialMedia";
 export { SkillSummary } from "./skill-summary/SkillSummary";

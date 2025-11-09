@@ -27,3 +27,11 @@
 	margin-top: -0.2rem;
 	margin-bottom: -1.0rem;
 }
+
+.grid {
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}

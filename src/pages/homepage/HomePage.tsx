@@ -1,5 +1,5 @@
 import styles from "./HomePage.module.css";
-import { Card, SkillSummary, SocialMedia, TitleCard, WorkHistory } from "../../components";
+import { Card, ProjectCard, SkillSummary, SocialMedia, TitleCard, WorkHistory } from "../../components";
 
 export const HomePage: React.FC = () => {
   const backendTools = ["Go", "NodeJS", "Python", "PostgreSQL", "RabbitMQ", "Terraform", "AWS", "NGINX", "Docker"];
@@ -70,6 +70,34 @@ export const HomePage: React.FC = () => {
             <p>Game Dev: Game Programmer, Junior Graphics Programmer</p>
           </WorkHistory.Detail>
         </WorkHistory>
+        <div className={styles.dottedDivider}></div>
+        <TitleCard title="Projects" subtitle="Things I have had my hands on." />
+        <div className={styles.grid}>
+          <ProjectCard>
+            <ProjectCard.Image src="https://placehold.co/1080x1080" />
+            <ProjectCard.Detail title="Maze Solver" description="A demo of the A* pathfinding algorithm." />
+          </ProjectCard>
+          <ProjectCard>
+            <ProjectCard.Image src="https://placehold.co/1080x1080" />
+            <ProjectCard.Detail title="Shanon Is Lost" description="Precision platformer video game made for a game jam." />
+          </ProjectCard>
+          <ProjectCard>
+            <ProjectCard.Image src="https://placehold.co/1080x1080" />
+            <ProjectCard.Detail title="Agni" description="I am the guy that did their infra that enable their remote work environment." />
+          </ProjectCard>
+          <ProjectCard>
+            <ProjectCard.Image src="https://placehold.co/1080x1080" />
+            <ProjectCard.Detail title="Bytesize Programming" description="A web video series teaching people programming." />
+          </ProjectCard>
+          <ProjectCard>
+            <ProjectCard.Image src="https://placehold.co/1080x1080" />
+            <ProjectCard.Detail title="Bejat Language" description="An esoteric programming language based on python." />
+          </ProjectCard>
+          <ProjectCard>
+            <ProjectCard.Image src="https://placehold.co/1080x1080" />
+            <ProjectCard.Detail title="Rendering Engine" description="A playground for testing & learning graphics technique." />
+          </ProjectCard>
+        </div>
       </Card>
     </>
   );

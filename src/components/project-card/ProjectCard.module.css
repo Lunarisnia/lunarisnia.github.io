@@ -1,0 +1,53 @@
+@import "../../styles/pallete.css";
+
+.image {
+	transform: scale(1.0);
+	display: block;
+
+	transition: transform 0.2s ease;
+}
+
+.container {
+	overflow: hidden;
+	width: 20rem;
+	height: 20rem;
+	display: block;
+}
+
+.image:hover {
+	transform: scale(0.5);
+
+	transition: transform 0.4s ease;
+}
+
+.body {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20rem;
+	height: 20rem;
+}
+
+.titleCard {
+	overflow: hidden;
+	padding-top: 0.2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	height: 100.5rem;
+	background-color: var(--primary-3);
+	position: relative;
+
+	transform: translateY(-4.7rem);
+	transition: transform 0.2s ease;
+}
+
+.titleCard:hover {
+	transform: translateY(-10rem);
+
+	transition: transform 0.2s ease;
+}
+
+.titleCardHeader {
+	font-size: 1.5rem;
+}
