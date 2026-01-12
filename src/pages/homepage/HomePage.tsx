@@ -6,6 +6,7 @@ import agni from "../../assets/agni.jpg";
 import bejat from "../../assets/bejat.png";
 import bytesize from "../../assets/bytesize.png";
 import rendering from "../../assets/rendering.png";
+import frameTheFight from "../../assets/frame-the-fight.png";
 
 export const HomePage: React.FC = () => {
   const backendTools = ["Go", "NodeJS", "Python", "PostgreSQL", "RabbitMQ", "Terraform", "AWS", "NGINX", "Docker"];
@@ -112,6 +113,10 @@ export const HomePage: React.FC = () => {
           <ProjectCard>
             <ProjectCard.Image src={rendering} href="https://www.youtube.com/watch?v=Mqug9-ZTXPY" />
             <ProjectCard.Detail title="Rendering Engine" description="A playground for testing & learning graphics technique." />
+          </ProjectCard>
+          <ProjectCard>
+            <ProjectCard.Image src={frameTheFight} href="https://github.com/Lunarisnia/frame-the-fight" />
+            <ProjectCard.Detail title="Frame The Fight" description="Highly customizable instant overlay for your tournament" />
           </ProjectCard>
         </div>
         <div className={styles.dottedDivider}></div>
