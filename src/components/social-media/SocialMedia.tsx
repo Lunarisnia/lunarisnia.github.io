@@ -4,7 +4,7 @@ import type React from "react";
 import { faGithub, faLinkedin, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export const SocialMedia: React.FC = () => {
-	const linkedInUrl = "https://www.linkedin.com/in/rio-arswendo-rachmad-990a091a9/";
+	const linkedInUrl = "https://www.linkedin.com/in/rio-arswendo-990a091a9/";
 	const githubUrl = "https://github.com/Lunarisnia";
 	const tiktokUrl = "https://www.tiktok.com/@lunarisnia";
 	const youtubeUrl = "https://www.youtube.com/@Lounarisnia";
