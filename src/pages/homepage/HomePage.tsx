@@ -7,6 +7,7 @@ import bejat from "../../assets/bejat.png";
 import bytesize from "../../assets/bytesize.png";
 import rendering from "../../assets/rendering.png";
 import frameTheFight from "../../assets/frame-the-fight.png";
+import knockdownsea from "../../assets/knockdownsea.png";
 
 export const HomePage: React.FC = () => {
   const backendTools = ["Go", "NodeJS", "Python", "PostgreSQL", "RabbitMQ", "Terraform", "AWS", "NGINX", "Docker"];
@@ -117,6 +118,10 @@ export const HomePage: React.FC = () => {
           <ProjectCard>
             <ProjectCard.Image src={frameTheFight} href="https://github.com/Lunarisnia/frame-the-fight" />
             <ProjectCard.Detail title="Frame The Fight" description="Highly customizable instant overlay for your tournament" />
+          </ProjectCard>
+          <ProjectCard>
+            <ProjectCard.Image src={knockdownsea} href="https://knockdownsea.com" />
+            <ProjectCard.Detail title="KNOCKDOWN." description="SEA monthly fighting game tournament league. I made their website and systems." />
           </ProjectCard>
         </div>
         <div className={styles.dottedDivider}></div>
