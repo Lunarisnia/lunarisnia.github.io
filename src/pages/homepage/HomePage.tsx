@@ -8,6 +8,8 @@ import bytesize from "../../assets/bytesize.png";
 import rendering from "../../assets/rendering.png";
 import frameTheFight from "../../assets/frame-the-fight.png";
 import knockdownsea from "../../assets/knockdownsea.png";
+import indotkBanlist from "../../assets/indotk-banlist.png";
+import sahamus from "../../assets/sahamus.png";
 
 export const HomePage: React.FC = () => {
   const backendTools = ["Go", "NodeJS", "Python", "PostgreSQL", "RabbitMQ", "Terraform", "AWS", "NGINX", "Docker"];
@@ -78,16 +80,38 @@ export const HomePage: React.FC = () => {
         </WorkHistory>
         <WorkHistory>
           <WorkHistory.Header>
-            Open For Hiring
+            Freelance Backend Developer at <a href="https://saham.us" target="_blank">Saham.us</a>
           </WorkHistory.Header>
           <WorkHistory.Duration>
-            Present - Contact Me!
+            Feb 2026 - Present
           </WorkHistory.Duration>
           <WorkHistory.Detail>
-            <p className={styles.smallPadding}>Web Dev: Full Stack, Front End, Back End</p>
-            <p>Game Dev: Game Programmer, Junior Graphics Programmer</p>
+            <p>Tech Used: Python</p>
           </WorkHistory.Detail>
         </WorkHistory>
+        <WorkHistory>
+          <WorkHistory.Header>
+            Full Stack Engineer at <a href="https://www.flip.id/" target="_blank">Flip</a>
+          </WorkHistory.Header>
+          <WorkHistory.Duration>
+            March 2026 - Present
+          </WorkHistory.Duration>
+          <WorkHistory.Detail>
+            <p>Tech Used: NextJS, TypeScript, Go, PostgreSQL, Redis, Google Cloud, Pub/Sub, Kubernetes</p>
+          </WorkHistory.Detail>
+        </WorkHistory>
+        {/* <WorkHistory> */}
+        {/*   <WorkHistory.Header> */}
+        {/*     Open For Hiring */}
+        {/*   </WorkHistory.Header> */}
+        {/*   <WorkHistory.Duration> */}
+        {/*     Present - Contact Me! */}
+        {/*   </WorkHistory.Duration> */}
+        {/*   <WorkHistory.Detail> */}
+        {/*     <p className={styles.smallPadding}>Web Dev: Full Stack, Front End, Back End</p> */}
+        {/*     <p>Game Dev: Game Programmer, Junior Graphics Programmer</p> */}
+        {/*   </WorkHistory.Detail> */}
+        {/* </WorkHistory> */}
         <div className={styles.dottedDivider}></div>
         <TitleCard id="projects" title="Projects" subtitle="Things I have had my hands on." />
         <div className={styles.grid}>
@@ -122,6 +146,14 @@ export const HomePage: React.FC = () => {
           <ProjectCard>
             <ProjectCard.Image src={knockdownsea} href="https://knockdownsea.com" />
             <ProjectCard.Detail title="KNOCKDOWN." description="SEA monthly fighting game tournament league. I made their website and systems." />
+          </ProjectCard>
+          <ProjectCard>
+            <ProjectCard.Image src={indotkBanlist} href="https://banlist.lounarisnia.com" />
+            <ProjectCard.Detail title="Indo Tekken Banlist" description="Community managed centralized Tekken rookie banlist." />
+          </ProjectCard>
+          <ProjectCard>
+            <ProjectCard.Image src={sahamus} href="https://saham.us" />
+            <ProjectCard.Detail title="Saham.us (Gig)" description="US stock market intelligence platform. I Built the backend from scratch." />
           </ProjectCard>
         </div>
         <div className={styles.dottedDivider}></div>
